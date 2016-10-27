@@ -3,60 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог гостинец</title>
+    <link rel="stylesheet" href="css/stle.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <nav class="main-navigation">
+          <ul>
+            <li>Информация</li>
+            <li>Фото и видео</li>
+            <li>Карта штата</li>
+            <li>Гостиницы</li>
+          </ul>
+          <img src="img/logo.jpg" alt="Логотип" width="138" height="70">
+        </nav>
       </div>
     </header>
     <main class="container">
-      <div class="filters">
-        <div class="infrastructure">
-          <h3>Инфраструктура:</h3>
-          <input type="checkbox" name="waterpool" id="waterpool" checked>
-          <label for="waterpool">Бассейн</label>
-          <input type="checkbox" name="parking" id="parking">
-          <label for="parking">Парковка</label>
-          <input type="checkbox" name="wi-fi" id="wi-fi">
-          <label for="wi-fi">WI-FI</label>
-        </div>
-        <div class="house-type">
-          <h3>Тип жилья:</h3>
-          <input type="checkbox" name="hotel" id="hotel" checked>
-          <label for="hotel">Гостиница</label>
-          <input type="checkbox" name="motel" id="motel" checked>
-          <label for="motel">Мотель</label>
-          <input type="checkbox" name="apartments" id="apartments" checked>
-          <label for="apartments">Апартаменты</label>
-        </div>
-        <div class="price-night">
+      <form>
+        <div class="filters"><!-- форма -->
+          <div class="infrastructure">
+            <h3>Инфраструктура:</h3>
+            <input type="checkbox" name="infrastructure" id="waterpool" checked>
+            <label for="waterpool">Бассейн</label>
+            <input type="checkbox" name="infrastructure" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="infrastructure" id="wi-fi">
+            <label for="wi-fi">WI-FI</label>
+          </div>
+          <div class="house-type">
+            <h3>Тип жилья:</h3>
+            <input type="checkbox" name="hotel" id="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel" checked>
+            <label for="motel">Мотель</label>
+            <input type="checkbox" name="apartments" id="apartments" checked>
+            <label for="apartments">Апартаменты</label>
+          </div>
+          <div class="price-night">
           <h3>Стоимость в сутки(Р):</h3>
-
+          </div>
         </div>
-      </div>
-      <div class="sort">
+      </form>
+      <div class="sort"><!--??-->
         <h2>Найдено: 3</h2>
         <p>Сортировка:</p>
+        ссылки
+        стрелки- ссылки
 
       </div>
-      <div class="found">
-        <img src="#" alt="" width="135px" height="90px">
-        <h2>AMARA RESORT & SPA</h2>
+      <div class="found"><!-- ??? -->
+        <img src="img/hotel-1.jpg" alt="Гостиница" width="135" height="90">
+        <h2>Amara Resort & Spa</h2>
         <p>Стоимость</p>
         <p>Гостиница</p>
         <p class="price">От 3500р.</p>
         <a href="#">Подробнее</a>
         <a href="#">Забронировать</a>
+        i создание иконок
       </div>
       <div class="found">
-        <img src="#" alt="" width="135px" height="90px">
-        <h2>DESERT QUAIL INN</h2>
+        <img src="img/hotel-2.jpg" alt="Мотель" width="135" height="90">
+        <h2>Deset Quail Inn</h2>
         <p>Мотель</p>
         <p>Стоимость</p>
         <p class="price">От 2000р.</p>
@@ -64,8 +72,8 @@
         <a href="#">Забронировать</a>
       </div>
       <div class="found">
-        <img src="#" alt="" width="135px" height="90px">
-        <h2>VILLAS AT POCOS DIABLOS</h2>
+        <img src="img/hotel-3.jpg" alt="Апартаменты" width="135" height="90">
+        <h2>Villas at Pocos Diablos</h2>
         <p>Апартаменты</p>
         <p>Стоимость</p>
         <p class="price">От 4000р.</p>
@@ -75,7 +83,7 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <h2>#VISITSEDONA</h2>
+        <h2>#VisitSedona</h2>
         <div class="footer-socail">
           <img src="#" alt="">>
           <img src="#" alt="">>
@@ -83,7 +91,7 @@
         </div>
         <div class="copyright">
           <a href="#">Website by</a>
-          <img src="#" alt="">>
+          <img src="img/bot-logo" alt="HTML Academy" width="113" height="39">
         </div>
       </div>
     </footer>
