@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/stle.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -15,22 +15,27 @@
             <li>Карта штата</li>
             <li>Гостиницы</li>
           </ul>
-          <img src="img/logo.jpg" alt="Логотип" width="138" height="70">
         </nav>
+        <img src="img/logo.jpg" alt="Логотип" width="138" height="70">
       </div>
     </header>
 
     <main class="container">
-      Фон картинка и текст
-      <h1>Седона - небольшой городок в Аризоне,<br />
-          заслуживающий большего
-      </h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      <div class="advantage-one">
-        <h3>Настоящий городок</h3>
-        <p> - №1 - </p>
-        <p>Седона - не аттракцион для туристов,<br />
+      <div class="sedona-image">
+      </div>
+      <div class="introduction">
+        <h1>Седона - небольшой городок в Аризоне,<br />
+            заслуживающий большего
+        </h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+      <div class="advantage-one clearfix">
+        <div class="text-advantage">
+          <h3>Настоящий городок</h3>
+          <p> - №1 - </p>
+          <p>Седона - не аттракцион для туристов,
           там течет своя жизнь</p>
+        </div>
         <img src="img/advan-1.jpg" alt="Город" width="800" height="256">
       </div>
       <div class="feel">
@@ -53,15 +58,17 @@
              производства!</p>
         </div>
       </div>
-      <div class="second-advantage">
+      <div class="second-advantage clearfix">
         <img src="img/advan-2.jpg" alt="Мост дьявола" width="800" height="256">
-        <h3>Там есть <br />
+        <div class="bridge">
+          <h3>Там есть <br />
             мост дьявола</h3>
-        <p> - №2 -</p>
-        <p>Да, по нему можно пройти! Если конечно <br />
+          <p> - №2 -</p>
+          <p>Да, по нему можно пройти! Если конечно <br />
            вы осмелитесь</p>
+        </div>
       </div>
-      <div class="other-advantages">
+      <div class="other-advantages clearfix">
         <div class="other">
           <h3>НЕБОЛЬШАЯ <br />
               ПЛОЩАДЬ</h3>
@@ -89,7 +96,7 @@
         <p>Укажите предполагаемые даты поездки, <br />
            и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <h2>Поиск гостиницы в Сеодне</h2>
-         <form class="find"><!-- && -->
+         <!--<form class="find">
 
 
             <label>
@@ -99,13 +106,13 @@
               Дата выезда<input type="text" name="eviction">
            </label>
             <a href="#">Найти</a>
-        </form>
+        </form>-->
       </div>
       <div class="map">
-        <img src="#" alt="">
+        <img src="#" alt="Map">
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
       <div class="container">
         <h2>#visitsedona</h2>
         <div class="footer-socail">
@@ -113,7 +120,7 @@
           <img src="#" alt="">
           <img src="#" alt="">
         </div>
-        <div class="copyright">
+        <div class="footer-copyright">
           <a href="#">Website by</a>
           <img src="img/bot-logo.jpg" alt="HTML Academy" width="113" height="39">
         </div>

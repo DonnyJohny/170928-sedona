@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог гостинец</title>
-    <link rel="stylesheet" href="css/stle.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -15,13 +15,13 @@
             <li>Карта штата</li>
             <li>Гостиницы</li>
           </ul>
-          <img src="img/logo.jpg" alt="Логотип" width="138" height="70">
         </nav>
+          <img src="img/logo.jpg" alt="Логотип" width="138" height="70">
       </div>
     </header>
     <main class="container">
       <form>
-        <div class="filters"><!-- форма -->
+        <div class="filters clearfix"><!-- форма -->
           <div class="infrastructure">
             <h3>Инфраструктура:</h3>
             <input type="checkbox" name="infrastructure" id="waterpool" checked>
@@ -52,44 +52,50 @@
         стрелки- ссылки-->
 
       </div>
-      <div class="found"><!-- ??? -->
+      <div class="found clearfix"><!-- ??? -->
         <img src="img/hotel-1.jpg" alt="Гостиница" width="135" height="90">
-        <h2>Amara Resort & Spa</h2>
-        <p>Стоимость</p>
-        <p>Гостиница</p>
-        <p class="price">От 3500р.</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
-        i создание иконок
+        <div class="about-house">
+          <h2>Amara Resort & Spa</h2>
+          <p>Стоимость</p>
+          <p>Гостиница</p>
+          <p class="price">От 3500р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+          i создание иконок
+        </div>
       </div>
-      <div class="found">
+      <div class="found clearfix">
         <img src="img/hotel-2.jpg" alt="Мотель" width="135" height="90">
-        <h2>Deset Quail Inn</h2>
-        <p>Мотель</p>
-        <p>Стоимость</p>
-        <p class="price">От 2000р.</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <div class="about-house">
+          <h2>Deset Quail Inn</h2>
+          <p>Мотель</p>
+          <p>Стоимость</p>
+          <p class="price">От 2000р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+        </div>
       </div>
-      <div class="found">
+      <div class="found clearfix">
         <img src="img/hotel-3.jpg" alt="Апартаменты" width="135" height="90">
-        <h2>Villas at Pocos Diablos</h2>
-        <p>Апартаменты</p>
-        <p>Стоимость</p>
-        <p class="price">От 4000р.</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <div class="about-house">
+          <h2>Villas at Pocos Diablos</h2>
+          <p>Апартаменты</p>
+          <p>Стоимость</p>
+          <p class="price">От 4000р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="container">
-        <h2>#VisitSedona</h2>
-        <div class="footer-socail">
-          <img src="#" alt="">
-          <img src="#" alt="">
-          <img src="#" alt="">
+        <div class="footer-sedona clearfix">
+          <h2>#VisitSedona</h2>
         </div>
-        <div class="copyright">
+        <div class="footer-social clearfix">
+          ss
+        </div>
+        <div class="footer-copyright clearfix">
           <a href="#">Website by</a>
           <img src="img/bot-logo.jpg" alt="HTML Academy" width="113" height="39">
         </div>

@@ -4,10 +4,153 @@ body {
   font-weight: bold;
   color: #000000;
   line-height: : 100%;
+  background-color: #f2f2f2;
 }
 h1 {
   font-size: 30px;
 }
 h2{
   font-size: 24px;
+}
+.clearfix::after {
+  content: "";
+  display:table;
+  clear: both;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fefefe;
+}
+.main-navigation {
+  min-height: 57px;
+  padding-left: 73px;
+  padding-right: 73px;
+}
+.sedona-image {
+  min-height: 570px;
+}
+.introduction {
+  margin: 0 auto;
+  width: 575px;
+  padding-bottom:55px;
+}
+
+.text-advantage {
+  float:left;
+  width:285px;
+  padding-left: 58px;
+  padding-top: 50px;
+}
+.advantage-one img {
+  width:800px;
+  float:right;
+}
+.feel{
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.what {
+  float:left;
+  width: 400px;
+  min-height: 200px;
+}
+.what:last-child {
+  float:right;
+}
+.second-advantage img {
+  float: left;
+  width: 800px;
+}
+.bridge {
+  width: 285px;
+  float: right;
+  padding-left: 50px;
+}
+.other {
+  width: 400px;
+  float: left
+}
+.other:last-child {
+  float:right;
+}
+.hotels {
+  min-height:290px;
+}
+.map img{
+  height: 475px;
+  width: 1200px;
+}
+.filters {
+  min-height: 217px;
+  padding-top:30px;
+}
+.infrastructure {
+  float: left;
+  width: 241px;
+  margin-left: 73px;
+}
+.house-type{
+  float: left;
+  width:286px;
+}
+.price-night{
+  float: right;
+  width:527px;
+  margin-right: 73px;
+}
+.price-night h3{
+  text-align: right;
+}
+.sort {
+  min-height: 75px;
+  width: 1200px;
+  padding-left: 73px;
+  padding-right: 73px;
+
+}
+.found{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 73px;
+  padding-right: 73px;
+  min-height: 150px;
+  border-bottom: 1px solid grey;
+}
+.found img {
+  height: 90px;
+  width: 135px;
+  float: left;
+  margin-right: 30px;
+}
+.about-house{
+  float: left;
+}
+.main-footer{
+  min-height: 120px;
+}
+.footer-sedona{
+  float:left;
+  width: 240px;
+  min-height: 120px;
+  margin-left:73px;
+  margin-right: 88px;
+  background-color: grey;
+}
+.footer-social {
+  float:left;
+  width: 400px;
+  background-color: blue;
+  min-height: 120px;
+}
+.footer-copyright{
+  float:right;
+  width: 241px;
+  min-height: 120px;/* мин высоту везде задавать? Вариант*/
+  margin-right: 73px;
+  background:green;
+}
+.footer-copyright img{
+  width: 113px;
+  height:39px;
 }
