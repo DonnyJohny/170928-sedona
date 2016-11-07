@@ -1,9 +1,10 @@
 body {
   font-size: 14px;
-  font-style: "PTSans";
-  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
   color: #000000;
-  line-height: : 100%;
+  line-height: 1.2;
   background-color: #f2f2f2;
 }
 h1 {
@@ -12,9 +13,15 @@ h1 {
 h2{
   font-size: 24px;
 }
+h3{
+  font-size: 21px;
+}
+.introduction p{
+  font-weight: normal;
+}
 .clearfix::after {
   content: "";
-  display:table;
+  display: table;
   clear: both;
 }
 .container {
@@ -23,141 +30,223 @@ h2{
   background-color: #fefefe;
 }
 .main-navigation {
-  min-height: 55px;
-  margin-left: 43px;/* другой размер отступа */
-  margin-right: 43px;
+  padding-left: 6%;
+  padding-right: 6%;
 }
-.main-navigation ul li{
+.main-navigation ul {
+  font-size: 0;
+  padding:0;/*??*/
+  padding-bottom: 17px;
+  padding-top: 17px;
+}
+.navigation{/* размер 20% от юл, а надо от 1200*/
   display: inline-block;
-  vertical-align: center;
-  min-height: 55px;
+  font-size: 14px;
+  line-height: 21px;
+  width:20%;
 }
-.main-navigation ul li:nth-child(1){
+.navigation:first-child{
+  float:left;
   text-align: left;
-  width:240px;
-  background-color: yellow;
 }
-.main-navigation ul li:nth-child(2){
-  text-align: left;
-  width:287px;
-  background-color: cyan;
+.navigation:nth-child(2){
+  float:left;
 }
-.main-navigation ul li:nth-child(3){
+.navigation:nth-child(3){
+  float: right;
   text-align: right;
-  width:287px;
-  background-color: blue;
 }
-.main-navigation ul li:nth-child(4){
+.navigation:last-child{
+  float: right;
   text-align: right;
-    width:240px;
-  background-color: red;
 }
-.main-header img{/*решить как разместить*/
+.main-header img{
   position:absolute;
   top:0;
-  margin-left:auto;
-  margin-right: auto;
+  left: 50%;
+  margin-left: -72px;
+  width: 144px;
+  height: 70px;
 }
 .sedona-image {
-  min-height: 570px;
+  width: 100%;
+  height: 509px;
+  background:
+              url(../img/underline.png) no-repeat 0 100% ,
+              url(../img/background.jpg) 0 -55px;
+  margin-bottom: 60px;
 }
 .introduction {
   margin: 0 auto;
   width: 575px;
-  padding-bottom:55px;
+  padding-bottom:41px;/*14 пикселей вокруг текста ???*/
+  text-align: center;
 }
-
+.main-text{
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 34px;
+}
 .text-advantage {
   float:left;
-  width:285px;
-  padding-left: 58px;
-  padding-top: 50px;
+  width:282px;
+  padding-left: 60px;
+  padding-top: 46px;
+  padding-right: 58px;
+  min-height: 210px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 .advantage-one img {
-  width:800px;
+  width:66.666%;
+  height: 256px;/*??*/
   float:right;
 }
 .feel{
-  margin-right: 73px;
-  margin-left: 73px;
-  min-height: 330px;
+  padding-top: 50px;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 81px;
 }
-.what {
-  float:left;
-  width: 327px;
-  min-height: 200px;
+.feel h3{
+  margin-bottom: 23px;/*&& 30px*/
+}
+.feel p{
+  line-height: 21px;
   text-align: center;
-  margin-top:50px;
-  background-color: cyan;
+  margin-bottom: 0;
 }
-.what:nth-child(2){
+.one {
+  float:left;
+  padding-top: 10px;
+  width:325px;
+  /*min-height: 190px;*/
+}
+.one h3{
+  padding-left: 95px;
+}
+.one img{
+  padding-left: 87px;
+  margin-bottom: 3px;/*21px?*/
+  width: 75px;
+  height: 72px;
+}
+.two{
   float:left;
   width: 400px;
-  background-color: pink;
+  padding-top: 10px;
+  text-align: center;
 }
-.what:last-child {
+.three {
   float:right;
-  background-color: yellow;
+  width: 327px;
+  padding-top: 10px;
+  text-align: center;
 }
 .second-advantage img {
   float: left;
-  width: 800px;
+  width: 66.666%;
+  height: 256px;
 }
 .bridge {
-  width: 285px;
+  width: 350.025px;
   float: right;
   padding-left: 50px;
+  padding-top: 46px;
+  min-height: 210px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 .other-advantages {
-  margin-left: 73px;
-  margin-right: 73px;
-  min-height: 255px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 34px;
+  min-height: 215px;
+  background-color: #eeeeee;
 }
-.other {
-  width: 327px;
+.other:first-child {
+  width: 240px;
   float: left;
   text-align: center;
+  padding-right: 87px;
+  font-weight: normal;
+
 }
 .other:nth-child(2){
+  float:left;
   width:400px;
+  text-align:center;
+  font-weight: normal;
 }
 .other:last-child {
   float:right;
+  width:245px;
+  padding-left:82px;
+  text-align: center;
+  font-weight: normal;
 }
 .hotels {
-  min-height:290px;
   text-align: center;
+  padding-top: 28px;/*маргин 24.9, что это */
+}
+.interesting{
+  font-size: 30.5px;
+}
+.hotels p{
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+.find{/*маргин 19.2 ??*/
+  margin: 0 auto;
+  width: 568px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  background-color: cyan;
+}
+.find h2{
+    font-size: 21px;
+}
+.map {
+  z-index: 1;
 }
 .map img{
   height: 595px;
   width: 1200px;
+  z-index: 1;
 }
 .filters {
   min-height: 217px;
-  padding-top:30px;
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color: cyan;
+  background-image: url(../img/filter.jpg) no-repeat 0 100%;
 }
 .infrastructure {
   float: left;
-  width: 241px;
-  margin-left: 73px;
+  width: 240px;
+  display:list;
+  text-align: left;
 }
 .house-type{
   float: left;
-  width:286px;
+  width:278px;
+  padding-left: 10px;
 }
 .price-night{
   float: right;
-  width:527px;
-  margin-right: 73px;
+  width:328px;
 }
 .price-night h3{
   text-align: right;
 }
 .sort {
-  min-height: 75px;
+  min-height: 55px;
   width: 1200px;
   padding-left: 73px;
   padding-right: 73px;
+  padding-top:10px;
 
 }
 .found{
@@ -165,7 +254,10 @@ h2{
   padding-bottom: 30px;
   padding-left: 73px;
   padding-right: 73px;
-  min-height: 150px;
+  min-height: 90px;
+  border-top: 1px solid grey;
+}
+.found:last-child{
   border-bottom: 1px solid grey;
 }
 .found img {
@@ -177,32 +269,45 @@ h2{
 .about-house{
   float: left;
 }
+.about-house h3, .about-house a{
+  margin: 0;
+}
 .main-footer{
   min-height: 120px;
 }
 .index-footer {
-    margin-top: -124px;
+  position: relative;
+  z-index: 12312;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fefefe;
+  margin-top: -123px;
+  opacity: 0.9;
+  min-height: 120px;/* жестко задать высоту*/
+  text-align: center;
 }
 .footer-sedona{
   float:left;
   width: 240px;
-  min-height: 120px;
-  margin-left:73px;
-  margin-right: 88px;
-  background-color: grey;
+  padding-top: 35px;
+  padding-left:73px;
+  padding-right: 87px;
+}
+.footer-sedona h2{
+  vertical-align: middle;
 }
 .footer-social {
   float:left;
   width: 400px;
-  background-color: cyan;
-  min-height: 120px;
+  padding-top: 40px;
 }
 .footer-copyright{
   float:right;
-  width: 241px;
-  min-height: 120px;/* мин высоту везде задавать? Вариант*/
-  margin-right: 73px;
-  background:green;
+  width: 240px;
+  padding-right: 73px;
+  padding-left: 87px;
+  padding-top: 40px;
+
 }
 .footer-copyright img{
   width: 113px;
