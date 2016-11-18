@@ -13,19 +13,20 @@
       <div class="container">
         <nav class="main-navigation">
           <ul class="clearfix">
-            <li class="navigation">Информация</li>
-            <li class="navigation">Фото и видео</li>
-            <li class="navigation">Гостиницы</li>
-            <li class="navigation">Карта штата</li>
+            <li class="navigation"><a href="#">Информация</a></li>
+            <li class="navigation"><a href="#">Фото и видео</a></li>
+            <li class="navigation"><a href="#">Гостиницы</a></li>
+            <li class="navigation"><a href="#">Карта штата</a></li>
           </ul>
         </nav>
-        <img src="img/logo.png" alt="Логотип" width="145" height="70">
+        <a href="/"><img src="img/logo.png" alt="Логотип" width="145" height="70"></a>
       </div>
     </header>
     <main class="container">
       <div class="sedona-image">
         <img class="welcome-image" src="img/welcome.png" alt="welcome" widht="188" height="45">
         <img class="gorgeous" src="img/gorgeous.png" alt="welcome" widht="176" height="30">
+        <i></i>
         <img class="big-image" src="img/sedona.png" alt="welcome" widht="458" height="78">
         <img class="sucks" src="img/sucks.png" alt="welcome" widht="296" height="80">
       </div>
@@ -108,22 +109,26 @@
           <form class="find-form">
             <div class="arr-block clearfix">
              <label class="text-form" for="arrival">Дата заезда: </label>
-             <input class="date calendar" type="text" name="arrival">
+             <input class="date" type="text" name="arrival">
+             <i></i>
             </div>
             <div class="arr-block arr-block2 clearfix">
              <label class="text-form" for="eviction">Дата выезда:</label>
              <input class="date" type="text" name="eviction" placeholder="4 июля 2016">
+             <i></i>
             </div>
             <div class="adult">
              <label>Взрослые:</label>
+             <i class="adult-minus"></i>
              <input class="people" type="text" name="adult">
+             <i class="adult-plus"></i>
             </div>
-
             <div class="childrens">
              <label>Дети:</label>
+             <i class="children-minus"></i>
              <input class="people" type="text" name="children">
+             <i class="children-plus"></i>
             </div>
-
             <a href="#">Найти</a>
         </form>
       </div>
@@ -137,9 +142,9 @@
           <h3>#VisitSedona</h3>
         </div>
         <div class="footer-social clearfix">
-          <a class="social-btn social-btn-twit" href="#">Twiter </a>
-          <a class="social-btn social-btn-fb" href="#">FB</a>
-          <a class="social-btn social-btn-play" href="#">Play</a>
+          <a class="social-btn social-btn-twit" >Twiter </a>
+          <a class="social-btn social-btn-fb" >FB</a>
+          <a class="social-btn social-btn-play" >Play</a>
         </div>
         <div class="footer-copyright clearfix">
           <a href="#">Website by</a>

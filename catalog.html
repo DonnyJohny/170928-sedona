@@ -12,12 +12,12 @@
       <div class="container">
         <nav class="main-navigation">
           <ul class="clearfix">
-            <li class="navigation">Информация</li>
-            <li class="navigation">Фото и видео</li>
-            <li class="navigation">Гостиницы</li>
-            <li class="navigation">Карта штата</li>
+            <li class="navigation"><a href="#">Информация</a></li>
+            <li class="navigation"><a href="#">Фото и видео</a></li>
+            <li class="navigation active-nav"><a href="#">Гостиницы</a></li>
+            <li class="navigation"><a href="#">Карта штата</a></li>
           </ul>
-          <img src="img/logo.png" alt="Логотип" width="145" height="70">
+          <a href="/"><img src="img/logo.png" alt="Логотип" width="145" height="70"></a>
         </nav>
       </div>
     </header>
@@ -31,7 +31,7 @@
               <label for="waterpool">Бассейн</label>
               <input type="checkbox" name="infrastructure" id="parking">
               <label for="parking">Парковка</label>
-              <input type="checkbox" name="infrastructure" id="wi-fi">
+              <input type="checkbox" name="infrastructure" id="wi-fi" disabled>
               <label for="wi-fi">WI-FI</label>
             </div>
           <div class="house-type">
@@ -70,15 +70,16 @@
       <div class="sort clearfix"><!--??-->
         <h3>Найдено: 3</h3>
         <span>Сортировка:</span>
-        <a href="#">По цене:</a>
-        <a href="#">По типу:</a>
-        <a href="#">По рейтингу:</a>
-        <i></i>
+        <a class="sort-active" href="#">По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По рейтингу</a>
+        <i class="top-arrow"></i>
+        <i class="down-arrow down-active-arrow"></i>
       </div>
       <div class="found clearfix"><!-- ??? -->
         <img src="img/hotel-1.jpg" alt="Гостиница" width="135" height="90">
         <div class="about-house">
-          <h3>Amara Resort & Spa</h3>
+          <a href="#" class="name"><h3>Amara Resort & Spa</h3></a>
           <div>
             <span class="hotel-type">Гостиница</span>
             <span class="price">От 3500 р.</span>
@@ -92,7 +93,7 @@
       <div class="found clearfix">
         <img src="img/hotel-2.jpg" alt="Мотель" width="135" height="90">
         <div class="about-house">
-          <h3>Desert Quail Inn</h3>
+          <a href="#" class="name"><h3>Desert Quail Inn</h3></a>
           <div>
             <span class="hotel-type">Мотель</span>
             <span class="price">От 2000 р.</span>
@@ -107,7 +108,7 @@
       <div class="found clearfix">
         <img src="img/hotel-3.jpg" alt="Апартаменты" width="135" height="90">
         <div class="about-house">
-          <h3>Villas at Poco Diablo</h3>
+          <a href="#" class="name"><h3>Villas at Poco Diablo</h3></a>
           <div>
             <span class="hotel-type">Апартаменты</span>
             <span class="price">От 4000 р.</span>
@@ -125,9 +126,9 @@
           <h3>#VisitSedona</h3>
         </div>
         <div class="footer-social">
-          <a class="social-btn social-btn-twit" href="#">Twiter </a>
-          <a class="social-btn social-btn-fb" href="#">FB</a>
-          <a class="social-btn social-btn-play" href="#">Play</a>
+          <a class="social-btn social-btn-twit" href="">Twiter </a>
+          <a class="social-btn social-btn-fb" href="">FB</a>
+          <a class="social-btn social-btn-play" href="">Play</a>
         </div>
         <div class="footer-copyright">
           <a href="#">Website by</a>
