@@ -1,4 +1,4 @@
-body {
+body{
   font-size: 14px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -7,7 +7,7 @@ body {
   line-height: 1.2;
   background-color: #f2f2f2;
 }
-h1 {
+h1{
   font-size: 30px;
 }
 h2{
@@ -19,22 +19,22 @@ h3{
 .introduction p{
   font-weight: normal;
 }
-.clearfix::after {
+.clearfix::after{
   content: "";
   display: table;
   clear: both;
 }
-.container {
+.container{
   width: 1200px;
   margin: 0 auto;
   background-color: #fefefe;
   box-shadow: 3px 0 3px 0 #dbdbdb,
               -3px 0 3px 0 #dbdbdb;
 }
-.main-navigation {
+.main-navigation{
     position: relative;
 }
-.main-navigation ul {
+.main-navigation ul{
   font-size: 0;
   padding:0;/*??*/
   padding-bottom: 18px;
@@ -92,7 +92,7 @@ h3{
   width: 144px;
   height: 70px;
 }
-.sedona-image {
+.sedona-image{
   width: 100%;
   height: 432px;
   background:
@@ -143,13 +143,13 @@ h3{
   margin: 0 auto;
   margin-bottom: 55px;
 }
-.sucks {
+.sucks{
   display: block;
   width: 296px;
   height: 80px;
   margin: 0 auto;
 }
-.introduction {
+.introduction{
   margin: 0 auto;
   width: 575px;
   padding-bottom:41px;/*14 пикселей вокруг текста ???*/
@@ -160,7 +160,7 @@ h3{
   line-height: 26px;
   margin-bottom: 33px;
 }
-.text-advantage {
+.text-advantage{
   float:left;
   width:282px;
   padding-left: 60px;
@@ -179,7 +179,7 @@ h3{
 .number-one{
   margin-bottom: 21px;
 }
-.advantage-one img {
+.advantage-one img{
   float:right;
   width:800px;
   height: 256px;/*??*/
@@ -198,7 +198,7 @@ h3{
   text-align: center;
   margin-bottom: 0;
 }
-.one {
+.one{
   float:left;
   padding-top: 10px;
   width:258px;
@@ -228,7 +228,7 @@ h3{
   margin-top: 25px;
   margin-bottom: 24px;
 }
-.three {
+.three{
   float:right;
   width: 300px;
   padding-top: 7px;
@@ -242,12 +242,12 @@ h3{
 .three h3{
   margin-top: 23px;
 }
-.second-advantage img {
+.second-advantage img{
   float: left;
   width: 800px;
   height: 256px;
 }
-.bridge {
+.bridge{
   width: 305;
   float: right;
   padding-top: 33px;
@@ -267,7 +267,7 @@ h3{
 .bridge p{
   margin-bottom: 21px;
 }
-.other-advantages {
+.other-advantages{
   padding-top: 25px;
   padding-left: 72px;
   padding-right: 60px;
@@ -276,14 +276,13 @@ h3{
   line-height: 21px;
   background-color: #eeeeee;
 }
-.other:first-child {
+.other:first-child{
   width: 240px;
   float: left;
   text-align: center;
   padding-right: 80px;
   padding-left: 7px;
-  font-weight: normal;
-
+  font-weight: 400;
 }
 .other:nth-child(2){
   float:left;
@@ -291,7 +290,7 @@ h3{
   text-align:center;
   font-weight: normal;
 }
-.other:last-child {
+.other:last-child{
   float:right;
   width:280px;
   text-align: center;
@@ -303,7 +302,7 @@ h3{
 .other p{
   margin-bottom: 21px;
 }
-.hotels {
+.hotels{
   text-align: center;
   padding-top: 26px;/*маргин 24.9, что это */
 }
@@ -325,10 +324,10 @@ h3{
   color: #ffffff;
 }
 .find h2{
-    font-size: 21px;
-    margin:0;
+  font-size: 21px;
+  margin:0;
 }
-.map {
+.map{
   z-index: 1;
 }
 .map img{
@@ -336,7 +335,7 @@ h3{
   width: 1200px;
   z-index: 1;
 }
-.filters {
+.filters{
   min-height: 203px;
   padding-top: 14px;
   padding-left: 6%;
@@ -354,7 +353,7 @@ h3{
 .filters input[type="checkbox"]{
   display:none;
 }
-.filters input[type="checkbox"] + label {
+.filters input[type="checkbox"] + label{
   display: block;
   margin: 10px 0;
   line-height: 20px;
@@ -363,7 +362,7 @@ h3{
   cursor: pointer;
   margin-bottom: 25px;
 }
-.infrastructure input[type="checkbox"] + label {
+.infrastructure input[type="checkbox"] + label{
   padding-left: 40px;
 }
 .filters input[type="checkbox"] + label::before{
@@ -395,7 +394,7 @@ h3{
 .filters input[type="checkbox"]:disabled + label::before{
   background-position: -397px -5px;
 }
-.infrastructure {
+.infrastructure{
   float: left;
   width: 240px;
   text-align: left;
@@ -488,7 +487,7 @@ h3{
 .max-range-toggle{
   left: 80%;
 }
-.range-toggle:hover {
+.range-toggle:hover{
   background: #1c4f80;
 }
 .btn-transparent{
@@ -504,7 +503,7 @@ h3{
   border-radius: 2px;
   cursor:pointer;
 }
-.btn-transparent:hover {
+.btn-transparent:hover{
   color: #000000;
   background: #ffffff;
 }
@@ -517,7 +516,7 @@ h3{
   padding-top:10px;
   padding-bottom: 10px;
 }
-.sort h3 {
+.sort h3{
   display: inline-block;
   margin-right: 44px;
 }
@@ -526,7 +525,7 @@ h3{
   font-size: 12px;
   margin-right: 36px;
 }
-.sort a {
+.sort a{
   display: inline-block;
   font-size: 12px;
   margin-right: 26px;
@@ -585,7 +584,6 @@ h3{
   background-position: -251px -5px;
   opacity: 1;
 }
-
 .found{
   position:relative;
   padding-top: 30px;
@@ -598,7 +596,7 @@ h3{
 .found:last-child{
   border-bottom: 1px solid #e5e5e5;
 }
-.found img {
+.found img{
   height: 90px;
   width: 135px;
   float: left;
@@ -621,7 +619,7 @@ h3{
   margin-top: -3px;
   margin-bottom: 0;
 }
-.hotel-type  {
+.hotel-type{
   display: inline-block;
   width: 109px;
   margin-top: 10px;
@@ -690,7 +688,7 @@ h3{
   padding: 5px 14px;
   background-color: #f2f2f2;
 }
-.index-footer {
+.index-footer{
   position: relative;
   z-index: 12312;
   width: 1200px;
@@ -714,7 +712,7 @@ h3{
   padding-right: 87px;
   text-align: center;
 }
-.footer-social {
+.footer-social{
   float:left;
   width: 276px;
   padding-top: 35px;
@@ -757,12 +755,12 @@ h3{
 }
 .social-btn-play:hover,
 .social-btn-fb:hover,
-.social-btn-twit:hover {
+.social-btn-twit:hover{
   background: #669ec0;
 }
 .social-btn-play:active,
 .social-btn-fb:active,
-.social-btn-twit:active {
+.social-btn-twit:active{
   background: #5496bd;
 }
 .social-btn-play:active::before,
@@ -803,7 +801,7 @@ h3{
   background-position: -5px -5px;
   opacity: 0.4;
 }
-@keyframes bounce {
+@keyframes bounce{
   0% {transform: translateY(-20px);}
   30% {transform: translateY(40px);}
   50% {transform: translateY(-5px);}
@@ -879,7 +877,7 @@ h3{
   text-align: center;
   font-size: 14px;
 }
-.adult {
+.adult{
   display: inline-block;
   width: 230px;
 }
