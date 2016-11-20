@@ -49,18 +49,18 @@ h3{
   line-height: 21px;
   font-weight: bold;
 }
-.navigation:first-child{
+.navigation:nth-child(n){
   float:left;
   text-align: left;
 }
-.navigation:nth-child(2){
+.navigation:nth-child(2n){
   float:left;
 }
-.navigation:nth-child(3){
+.navigation:nth-child(3n){
   float: right;
   text-align: right;
 }
-.navigation:last-child{
+.navigation:nth-child(4n){
   float: right;
   text-align: right;
   padding-right: 5px;
