@@ -262,6 +262,9 @@ h3{
   cursor: pointer;
 }
 .map{
+  width: 1200px;
+  height: 595px;
+  background-color: #cbe6a3;
   z-index: 1;
 }
 .map img{
