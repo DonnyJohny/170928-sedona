@@ -25,15 +25,15 @@ h3{
   width: 1200px;
   margin: 0 auto;
   background-color: #fefefe;
-  box-shadow: 3px 0 3px 0 #dbdbdb,
-              -3px 0 3px 0 #dbdbdb;
+  box-shadow: 4px 0 8px 0 #dbdbdb,
+              -4px 0 8px 0 #dbdbdb;
 }
 .main-header img{
   position: absolute;
-  width: 144px;
-  height: 70px;
   top: 0;
   left: 50%;
+  width: 144px;
+  height: 70px;
   margin-left: -72px;
 }
 .main-navigation{
@@ -103,17 +103,15 @@ h3{
   width: 575px;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 51px;
+  padding-bottom: 37px;
 }
-.introduction span {
-  display: inline-block;
-  vertical-align: top;
+.introduction p{
   line-height: 26px;
 }
 .main-text{
-  text-align: center;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   margin-bottom: 27px;
 }
 .text-advantage{
@@ -136,7 +134,7 @@ h3{
 .text-advantage span{
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 21px;
+  margin-bottom: 7px;
 }
 .advantage-one img{
   float: right;
@@ -157,9 +155,7 @@ h3{
   float: left;
   text-align: center;
 }
-.feel span{
-  display: inline-block;
-  vertical-align: top;
+.feel p{
   line-height: 21px;
   text-align: center;
   margin-bottom: 0;
@@ -195,6 +191,9 @@ h3{
   vertical-align: top;
   width: 305px;
 }
+.second-advantage p{
+  width: 305px;
+}
 .second-advantage img{
   float: left;
   width: 800px;
@@ -222,7 +221,7 @@ h3{
 .other-advantages span{
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 21px;
+  margin-bottom: 7px;
 }
 .other-advantages div:first-child,
 .other-advantages div:nth-child(2){
@@ -234,13 +233,13 @@ h3{
 }
 .hotels h2{
   font-size: 30px;
-  margin-bottom: 24px;
 }
-.hotels span{
+.hotels p{
   display: inline-block;
   vertical-align: top;
   line-height: 24px;
-  margin-bottom: 48px;
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 .find{
   position: relative;
@@ -251,12 +250,19 @@ h3{
   padding-bottom: 30px;
   margin: 0 auto;
 }
-.find a{
+.open-form{
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  cursor: pointer;
+  background-color: #766357;
   margin: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .map{
   width: 1200px;
@@ -291,10 +297,10 @@ h3{
   position: relative;
   display: block;
   line-height: 20px;
-  cursor: pointer;
   padding-left: 43px;
   margin: 10px 0;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 .infrastructure input[type="checkbox"] + label{
   padding-left: 40px;
@@ -302,32 +308,32 @@ h3{
 .filters input[type="checkbox"] + label::before{
   position: absolute;
   content: "";
+  top: 0;
+  left: 0;
   display: block;
   width: 22px;
   height: 22px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -521px -5px;
-  top: 0;
-  left: 0;
 }
 .filters input[type="checkbox"]:checked + label::before{
   position: absolute;
   content: "";
+  top: 0;
+  left: 0;
   width: 26px;
   height: 22px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -465px -5px;
-  top: 0;
-  left: 0;
   border: 0;
 }
 .filters input[type="checkbox"]:disabled + label::before{
   background-position: -397px -5px;
 }
 .checkbox-wrapper{
-  max-width: 620;
+  max-width: 550px;
 }
 .infrastructure{
   float: left;
@@ -350,19 +356,19 @@ h3{
   margin-top: 13px;
 }
 .filter-range-title{
-  margin-bottom: 10px;
-  font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .price-controls{
   position: relative;
   height: 32px;
   font-size: 0;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
   margin-left: 10px;
   margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 .price-controls::after{
   content: "";
@@ -578,9 +584,9 @@ a.down-active-arrow{
 .more{
   display: inline-block;
   vertical-align: top;
-  font-weight: 600;
   color: #ffffff;
   background-color: #81b3d2;
+  font-weight: 600;
   padding-top: 5px;
   padding-left: 16px;
   padding-right: 16px;
@@ -597,9 +603,9 @@ a.down-active-arrow{
 .booking{
   display: inline-block;
   vertical-align: top;
-  font-weight: 600;
   color: #ffffff;
   background-color: #766357;
+  font-weight: 600;
   padding-top: 5px;
   padding-left: 16px;
   padding-right: 16px;
@@ -614,12 +620,12 @@ a.down-active-arrow{
 }
 .stars{
   float: right;
+  left: 1px;
   width: 89px;
   height: 17px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -583px -5px;
-  left: 1px;
 }
 .two-stars{
   width: 42px;
@@ -629,34 +635,38 @@ a.down-active-arrow{
 }
 .rating{
   position: absolute;
+  right: 71px;
+  bottom: 32px;
   display: inline-block;
   vertical-align: top;
   background-color: #f2f2f2;
-  right: 71px;
-  bottom: 32px;
   padding: 5px 14px;
 }
 .index-footer{
   position: relative;
+  z-index: 12312;
   width: 1200px;
   min-height: 122px;
   background-color: #fefefe;
-  opacity: 0.9;
-  z-index: 12312;
   margin: 0 auto;
   margin-top: -121px;
+  opacity: 0.9;
 }
 .main-footer .container{
   min-height: 120px;
   text-align: center;
   background-color: #ffffff;
 }
-.footer-sedona{
-  float: left;
+.footer-sedona span{
+  display: inline-block;
+  vertical-align: top;
   width: 240px;
+  font-size: 21px;
+  font-weight: 600;
+  float: left;
   text-align: center;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 45px;
   padding-left: 80px;
   padding-right: 87px;
 }
@@ -734,13 +744,13 @@ a.down-active-arrow{
 .footer-copyright a::before{
   position: absolute;
   content: "";
+  right: 30px;
+  top: -1px;
   width: 113px;
   height: 39px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -5px -5px;
-  right: 30px;
-  top: -1px;
 }
 .footer-copyright a:hover::before{
   background-position: -128px -5px;
@@ -795,14 +805,14 @@ a.down-active-arrow{
 }
 .find-form{
   position: absolute;
-  font-weight: 600;
   text-align: left;
-  color:#000000;
+  color: #000000;
   background-color: #ffffff;
+  font-weight: 600;
   margin-top: 31px;
   padding-top: 55px;
-  padding-left: 54px;
-  padding-right: 53px;
+  padding-left: 55px;
+  padding-right: 55px;
   -webkit-animation: bounce 0.8s;
       -ms-transform: bounce 0.8s;
           animation: bounce 0.8s;
@@ -812,17 +822,17 @@ a.down-active-arrow{
 }
 .btn-calendar{
   position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 7px;
   width: 21px;
   height: 22px;
   background-image: url("../img/sprite.png");
   background-position: -335px -5px;
   background-repeat: no-repeat;
   background-color: transparent;
-  right: 10px;
-  top: 7px;
   border: none;
   opacity: 0.5;
-  z-index: 2;
 }
 .find-form input:hover{
   background-color: #ebebeb;
@@ -833,48 +843,52 @@ a.down-active-arrow{
 }
 .text-form{
   position: relative;
-  margin-top: 10px;
+  font-size: 14px;
+  line-height: 37px;
 }
  .input-date{
   position: relative;
   float: right;
-  width: 300px;
-  height: 37px;
+  width: 299px;
+  height: 35px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  background: #f2f2f2;
+  letter-spacing: 0px;
   text-transform: uppercase;
-  margin-bottom: 29px;
-  padding-left: 10px;
+  background: #f2f2f2;
+  margin-bottom: 30px;
+  padding-left: 11px;
   padding-right: 35px;
   border: 0;
 }
 .people{
-  width: 23px;
-  height: 37px;
+  width: 26px;
+  height: 36px;
   text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 37px;
+  line-height: 38px;
   background: #f2f2f2;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 42px;
+  padding-right: 44px;
   border: 0;
 }
 .adult{
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 230px;
+  width: 228px;
 }
 .childrens{
   position: relative;
   float: right;
+  text-align: left;
   display: inline-block;
   vertical-align: top;
-  height: 37px;
+  height: 35px;
   width: 180px;
-  text-align: left;
 }
 .adult input,
 .childrens input{
@@ -885,31 +899,31 @@ a.down-active-arrow{
 .arr-block label{
   display: inline-block;
   vertical-align: top;
-  margin-top: 10px;
+  line-height: 38px;
 }
 .btn-minus{
   position: absolute;
+  top: 18px;
+  right: 90px;
   width: 12px;
   height: 3px;
   background-position: -709px -5px;
   background-repeat: no-repeat;
   background-image: url("../img/sprite.png");
   background-color: transparent;
-  top: 17px;
-  right: 90px;
   opacity: 0.5;
   border: none;
 }
 .btn-plus{
   position: absolute;
+  top: 14px;
+  right: 14px;
   width: 11px;
   height: 11px;
   background-position: -753px -5px;
   background-repeat: no-repeat;
   background-image: url("../img/sprite.png");
   background-color: transparent;
-  top: 13px;
-  right: 15px;
   opacity: 0.5;
   border: none;
 }
@@ -935,13 +949,14 @@ a.down-active-arrow{
 .find-btn{
   width: 459px;
   height: 58px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   font-size: 21px;
   line-height: 48px;
   text-align: center;
   text-transform: uppercase;
   background-color: #81b3d2;
-  margin-top: 52px;
+  margin-top: 55px;
   margin-bottom: 55px;
   border: none;
 }
@@ -952,10 +967,22 @@ a.down-active-arrow{
   background-color: #5496bd;
   color: #81b2ce;
 }
-.close-form {
+.close-form{
   display: none;
 }
-::-webkit-input-placeholder {color:#000000; font-weight: 600;}
-::-moz-placeholder          {color:#000000; font-weight: 600;}/* Firefox 19+ */
-:-moz-placeholder           {color:#000000; font-weight: 600;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#000000; font-weight: 600;}
+::-webkit-input-placeholder{
+  color: #000000;
+  font-weight: 600;
+}
+::-moz-placeholder{
+  color: #000000;
+  font-weight: 600;
+}
+:-moz-placeholder{
+  color: #000000;
+  font-weight: 600;
+  }
+:-ms-input-placeholder{
+  color: #000000;
+  font-weight: 600;
+}
