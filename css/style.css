@@ -246,11 +246,10 @@ h3{
   width: 568px;
   color: #ffffff;
   background-color: #766357;
-  padding-top: 30px;
-  padding-bottom: 30px;
   margin: 0 auto;
 }
 .open-form{
+  width: 568px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 24px;
@@ -259,7 +258,9 @@ h3{
   text-decoration: none;
   color: #ffffff;
   background-color: #766357;
-  margin: 0;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  margin: 0 auto;
   border: none;
   outline: none;
   cursor: pointer;
